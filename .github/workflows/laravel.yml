@@ -66,5 +66,5 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           port: 22
           script: |
-            cd /var/www/html/cicd-example-app-01
+            cd /var/www/html/cicd-example-app-02
             git pull
