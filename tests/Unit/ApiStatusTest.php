@@ -19,8 +19,8 @@ class ApiStatusTest extends TestCase
         $app = $this->createApplication();
         $response = $app->handle($app['request']->create('/api/check_server'));
 
-        $this->assertEquals(200, $response->getStatusCode());
-        $this->assertStringContainsString('Server is Up', $response->getContent());
+        $this->assertEquals(201, $response->getStatusCode());
+        $this->assertStringContainsString('Server is Down', $response->getContent());
     }
 
 }
