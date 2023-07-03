@@ -96,4 +96,4 @@ jobs:
           script: |
             cd /var/www/html/cicd-example-app-02
             git pull
-            composer install --no-interaction --no-dev --prefer-dist
+            php artisan optimize
